@@ -71,12 +71,18 @@ sql
       
 8. Automating Backup and Recovery
 Create batch scripts for convenience:
-backup.bat
+**backup.bat**
 
 bat
-"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump.exe" -u root -p prtkintern > "C:\Users\prati\prtkintern_backup.sql"
-restore.bat
+
+       "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump.exe" -u root -p prtkintern >               
+       "C:\Users\prati\prtkintern_backup.sql"
+       
+**restore.bat**
 
 bat
-"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p prtkintern < "C:\Users\prati\prtkintern_backup.sql"
+
+       "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p prtkintern <        
+       "C:\Users\prati\prtkintern_backup.sql"
+       
 Double‑clicking these files will run backup or restore automatically.
