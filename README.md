@@ -41,26 +41,26 @@ bash
 To test recovery, drop the database:
 bash
 
-      "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p -e "DROP DATABASE prtkintern;"
+             "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p -e "DROP DATABASE prtkintern;"
       
 5. Recreating Database
 Create a fresh empty database:
 bash
 
-      "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p -e "CREATE DATABASE prtkintern;"
+             "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p -e "CREATE DATABASE prtkintern;"
 
 6. Restoring Database
 Import the backup file into the new database:
 bash
 
-      "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p prtkintern <                        
-      "C:\Users\prati\prtkintern_backup.sql"
+             "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p prtkintern <                        
+             "C:\Users\prati\prtkintern_backup.sql"
       
 7. Verifying Recovery
 Log back into MySQL and check tables:
 bash
 
-      "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p
+             "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p
       
 Inside MySQL shell:
 sql
